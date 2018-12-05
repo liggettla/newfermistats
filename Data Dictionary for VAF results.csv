@@ -1,0 +1,18 @@
+Column Header,Description
+location,Base pair location
+mean,average VAF for the set of background samples
+SD,VAF standard deviation for the set of background samples
+tStat,t statistic for a one sided one sample t-test comparing the average VAF in the background samples to 0
+df,degrees of freedom used for the one-sided one sample t-test
+pval,uncorrected pvalue for a one sided one sample t-test comparing the average VAF in the background samples to 0
+site,sample site
+Var,Variant
+WT,Wild type
+LBonPI,lower bonferroni corrected prediction interval (lower limit set to 0 since negative VAF not possible).
+UBonPI,upper bonferroni corrected prediction interval
+Chrom,chromosome location
+VAF,"Variant allele frequency for a patient (i.e., experimental sample)"
+ID,Sample ID number
+sigVAF,Indicator for whether the VAF is above the upper bonferroni corrected prediction interval
+alpha,Alpha used to create the prediction interval
+numTests,number of tests run that were corrected for using bonferroni correction
