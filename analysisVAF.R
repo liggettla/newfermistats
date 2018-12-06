@@ -65,9 +65,11 @@ sampleTypeExp<-seq(from=23,to=34,by=1)
 
 ## set location for where the output dataset should be sent
 outFileLoc<-"//ucdenver.pvt/som/CC1/Biostatistics/projects/DegregoriJames/Alex/results/"
+outFileLoc<-"/home/alex/Dropbox/Code/Sequencing/newfermistats"
 
 ## Read Data
-df<-read.table("//ucdenver.pvt/som/CC1/Biostatistics/projects/DegregoriJames/Alex/liggettVAFdataWithSampleInfo.csv",sep=",",header=TRUE,stringsAsFactors = FALSE)
+#df<-read.table("//ucdenver.pvt/som/CC1/Biostatistics/projects/DegregoriJames/Alex/liggettVAFdataWithSampleInfo.csv",sep=",",header=TRUE,stringsAsFactors = FALSE)
+df<-read.table("liggett.csv",sep=",",header=TRUE,stringsAsFactors = FALSE)
 
 ## read in a list of the 32 different sites
 sites<-read.table("//ucdenver.pvt/som/CC1/Biostatistics/projects/DegregoriJames/Alex/siteSpecificLocations.csv",sep=",",header=FALSE,stringsAsFactors = FALSE)
